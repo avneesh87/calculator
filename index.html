@@ -40,6 +40,57 @@
           background-repeat: no-repeat;
           background-size: 100% 100%;
         }
+     @media only screen and (max-width: 600px) {
+      #a {
+        margin-left: 38px;
+        width: 300px;
+        height: 500px;
+      }
+
+      #b {
+
+        width: 300px;
+        height: 80px;
+        border-radius: 15px 15px 0px 0px;
+        /* background-color: rgb(195, 212, 241); */
+        background: linear-gradient(to right, rgb(17, 17, 248), yellow, rgb(236, 20, 20));
+
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      #a {
+        margin-left: 30px;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      #a {
+        margin-left: 160px;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      #a {
+        margin-left: 300px;
+      }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      #a {
+        margin-left: 400px;
+      }
+    }
     </style>
 </head>
 
