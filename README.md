@@ -1,1 +1,305 @@
-# calculator
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            margin-left: 440px;
+            width: 360px;
+            height: 560px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        #b {
+
+            width: 360px;
+            height: 100px;
+            border-radius: 15px 15px 0px 0px;
+            /* background-color: rgb(195, 212, 241); */
+            background: linear-gradient(to right,rgb(17, 17, 248),yellow,rgb(236, 20, 20));
+
+        }
+        img {
+            width: 84px;
+            height: 84px;
+            border-radius: 100%;
+        }
+        #value{
+            font-size: 60px;
+            overflow: hidden;
+            color: white;
+            
+        }
+        body{
+          background-image: url('cal.jpeg');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">
+        <div id="b">
+            <p id="value"></p>
+
+        </div>
+        <div id="c">
+            <table>
+                <tr>
+                    <td><a href="#" onclick="clear1()"><img src="c.jpg" alt="C" ></a></td>
+                    <td><a href="#" onclick="clearEntry()"><img src="ce.jpg" alt="CE"></a></td>
+                    <td><a href="#" onclick="mod()"><img src="%.png" alt="%"></a></td>
+                    <td><a href="#" onclick="divi()"><img src="divi.png" alt="/"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="seven7()"><img src="7.png" alt="7"></a></td>
+                    <td><a href="#" onclick="eight8()"><img src="8.jpg" alt="8"></a></td>
+                    <td><a href="#" onclick="nine9()"><img src="9.jpg" alt="9"></a></td>
+                    <td><a href="#" onclick="mul()"><img src="X.png" alt="X"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="four4()"><img src="4.png" alt="4"></a></td>
+                    <td><a href="#" onclick="five5()"><img src="5.jpg" alt="5"></a></td>
+                    <td><a href="#" onclick="six6()"><img src="6.jpg" alt="6"></a></td>
+                    <td><a href="#" onclick="sub()"><img src="-.png" alt="-"></a></td>
+
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="one1()"><img src="1.png" alt="1" ></a></td>
+                    <td><a href="#" onclick="two2()"><img src="2.png" alt="2"></a></td>
+                    <td><a href="#" onclick="three3()"><img src="3.jpg" alt="3"></a></td>
+                    <td><a href="#" onclick="sum()"><img src="+.png" alt="+"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="zero1()"><img src="0.jpg" alt="0"></a></td>
+                    <td><a href="#" onclick="dubZero()"><img src="146-1465761_00-racing-number.png" alt="00"></a></td>
+                    <td><a href="#" onclick="point1()"><img src="point.jpg" alt="."></a></td>
+                    <td><a href="#" onclick="equal1()"><img src="cannot-equal-sign-math-equal-equal-sign-mathcad-e1574656748574.jpg" alt="="></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script> 
+    var a='';
+    function zero1() {
+         one11='0';
+         a=a+one11;
+         document.getElementById('value').innerHTML=a;
+       }
+       function dubZero() {
+         one11='00';
+         a=a+one11;
+         document.getElementById('value').innerHTML=a;
+       }
+       function point1() {
+         one11='.';
+         a=a+one11;
+         document.getElementById('value').innerHTML=a;
+       }
+       function one1() {
+         one11='1';
+         a=a+one11;
+         document.getElementById('value').innerHTML=a;
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function two2() {
+         two22='2';
+         a=a+two22;
+         document.getElementById('value').innerHTML=a; 
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+
+       function three3() {
+         three33=3;
+         a=a+three33;
+         document.getElementById('value').innerHTML=a;
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function four4() {
+          four44=4;
+          a=a+four44;
+          document.getElementById('value').innerHTML=a;
+          if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function five5() {
+         five55=5;
+         a=a+five55;
+         document.getElementById('value').innerHTML=a;
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function six6() {
+         six66=6;
+         a=a+six66;
+         document.getElementById('value').innerHTML=a;
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function seven7() {
+         seven77=7;
+         a=a+seven77;
+         document.getElementById('value').innerHTML=a;
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function eight8() {
+         eight88=8;
+         a=a+eight88;
+         document.getElementById('value').innerHTML=a;
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function nine9() {
+         nine99=9;
+         a=a+nine99;
+         document.getElementById('value').innerHTML=a; 
+         if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+       }
+       function sum() {
+         a=a+'+';
+        document.getElementById('value').innerHTML=a;
+        if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+          
+       }
+       function sub() {
+        a=a+'-';
+        document.getElementById('value').innerHTML=a;
+        if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+          
+       }
+       function mul() {
+        a=a+'*';
+        document.getElementById('value').innerHTML=a;
+        if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+          
+       }
+       function divi() {
+        a=a+'/';
+        document.getElementById('value').innerHTML=a;
+        if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+          
+       }
+       function mod() {
+        a=a+'%';
+        document.getElementById('value').innerHTML=a;
+        if(a.length>12)
+         {
+          document.getElementById('value').style.fontSize='40px';
+         }
+         if(a.length>17)
+         {
+          document.getElementById('value').style.fontSize='30px';
+         }
+          
+       }
+       function equal1() {
+        document.getElementById('value').innerHTML=eval(a);
+        a='';
+       }
+       function clear1() {
+       a = a.slice(0,-1);
+        document.getElementById('value').innerHTML=a; 
+       }
+       function clearEntry() {
+        a='';
+        document.getElementById('value').innerHTML=a; 
+       } 
+
+       
+    </script>
+</body>
+
+</html>
